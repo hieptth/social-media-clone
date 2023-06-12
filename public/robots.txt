@@ -1,0 +1,8 @@
+# https://www.robotstxt.org/robotstxt.html
+User-agent: Googlebot
+Disallow: /noGoogleBot/
+
+User-agent: *
+Disallow: /
+
+Sitemap: https://%PUBLIC_URL%/sitemap.xml
