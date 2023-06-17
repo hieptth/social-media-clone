@@ -1,0 +1,24 @@
+:root {
+    --white: #fafafa;
+    --focusWhite: white;
+    --lightGray: #E8E8E8;
+    --lightBlue: #d6e5f2;
+    --black: #2C2C2C;
+    --navyBlue: #283cd7;
+    --mint: #99edc3;
+
+    --custom-font-size: 12px;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+    list-style: none;
+    text-decoration: none;
+}
+
+body {
+    background: var(--white);
+}
