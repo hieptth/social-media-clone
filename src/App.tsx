@@ -6,7 +6,7 @@ import { createContext, useState } from "react";
 
 export interface ContextProps {
   username: string;
-  setUsername: React.Dispatch<React.SetStateAction<String>>;
+  setUsername: React.Dispatch<React.SetStateAction<string>>;
 }
 
 export const AppContext = createContext<ContextProps>({
