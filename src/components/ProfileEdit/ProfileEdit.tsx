@@ -7,6 +7,7 @@ export const ProfileEdit = () => {
 
   const handleNameChange = () => {
     setUsername(newUsername);
+
     setNewUsername("");
   };
 
@@ -15,11 +16,12 @@ export const ProfileEdit = () => {
       <input
         type="text"
         name="newUsernameInput"
-        onChange={(e) => {
-          setNewUsername(e.target.value);
-        }}
+        onChange={(e) => setNewUsername(e.target.value)}
+        value={newUsername}
       />
-      <button onClick={() => handleNameChange()}>Change name</button>
+      <button type="button" onClick={() => handleNameChange()}>
+        Change name
+      </button>
     </>
   );
 };
