@@ -2,6 +2,7 @@
 import { useContext } from "react";
 import { AppContext } from "../App";
 import { ProfileEdit } from "../components/ProfileEdit/ProfileEdit";
+import { Form } from "../components/Form/Form";
 
 export const Profile = () => {
   // let { username } = useParams();
@@ -11,6 +12,9 @@ export const Profile = () => {
     <>
       <h1>This is the Profile page for {username}</h1>
       <ProfileEdit />
+      <div>
+        <Form />
+      </div>
     </>
   );
 };
