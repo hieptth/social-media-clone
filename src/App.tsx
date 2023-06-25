@@ -3,7 +3,6 @@ import { Provider } from "react-redux";
 import { Navbar } from "./components/NavBar/Navbar";
 import { routes } from "./routes";
 import "./App.css";
-import { useState } from "react";
 import { QueryClient, QueryClientProvider } from "@tanstack/react-query";
 import { store } from "./store";
 
