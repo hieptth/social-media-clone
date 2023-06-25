@@ -1,8 +1,9 @@
-import { Link } from "react-router-dom";
 import "./Navbar.css";
+import { Link } from "react-router-dom";
+import { useSelector } from "react-redux";
 
 export const Navbar = () => {
-  const username = "Hak";
+  const { username } = useSelector((state: any) => state.user.value);
 
   return (
     <>
