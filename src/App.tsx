@@ -1,21 +1,11 @@
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
+import { Provider } from "react-redux";
 import { Navbar } from "./components/NavBar/Navbar";
 import { routes } from "./routes";
 import "./App.css";
-import { createContext, useState } from "react";
+import { useState } from "react";
 import { QueryClient, QueryClientProvider } from "@tanstack/react-query";
-
-export interface ContextProps {
-  username: string;
-  setUsername: React.Dispatch<React.SetStateAction<string>>;
-}
-
-export const AppContext = createContext<ContextProps>({
-  username: "",
-  setUsername: () => {
-    throw new Error("No username available.");
-  },
-});
+import { store } from "./store";
 
 export const App = () => {
   const client = new QueryClient({
@@ -25,12 +15,11 @@ export const App = () => {
       },
     },
   });
-  const [username, setUsername] = useState("Hak");
 
   return (
     <div className="App">
       <QueryClientProvider client={client}>
-        <AppContext.Provider value={{ username, setUsername }}>
+        <Provider store={store}>
           <Router>
             <Navbar />
             <Routes>
@@ -46,7 +35,7 @@ export const App = () => {
               })}
             </Routes>
           </Router>
-        </AppContext.Provider>
+        </Provider>
       </QueryClientProvider>
     </div>
   );

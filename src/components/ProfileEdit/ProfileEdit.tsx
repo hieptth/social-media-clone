@@ -1,12 +1,14 @@
-import { useState, useContext } from "react";
-import { AppContext } from "../../App";
+import { useState } from "react";
+import { useDispatch } from "react-redux";
+import { login } from "../../store";
 
 export const ProfileEdit = () => {
   const [newUsername, setNewUsername] = useState("");
-  const { setUsername } = useContext(AppContext);
+
+  const dispatch = useDispatch();
 
   const handleNameChange = () => {
-    setUsername(newUsername);
+    dispatch(login({ username: newUsername }));
 
     setNewUsername("");
   };

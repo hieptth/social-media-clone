@@ -1,6 +1,19 @@
 .App {
     display: grid;
-    justify-content: center;
+    justify-items: center;
     align-items: center;
-    align-content: center;
+    grid-template-areas: 'header' 'content' 'footer';
+    gap: 0 1rem;
+}
+
+Navbar {
+    grid-area: header;
+}
+
+Routes {
+    grid-area: content;
+}
+
+Footer {
+    grid-area: footer;
 }
