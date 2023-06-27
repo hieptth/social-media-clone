@@ -1,8 +1,8 @@
 import { Contact } from "./pages/Contact";
-import { ErrorPage } from "./pages/ErrorPage";
-import { Home } from "./pages/Home";
-import { Login } from "./pages/Login";
-import { Profile } from "./pages/Profile";
+import { ErrorPage } from "./pages/ErrorPage/ErrorPage";
+import { Home } from "./pages/Home/Home";
+import { Login } from "./pages/Login/Login";
+import { Profile } from "./pages/Profile/Profile";
 
 export const routes = [
   { path: "", component: Home },

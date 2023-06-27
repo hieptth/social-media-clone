@@ -20,19 +20,27 @@ export const App = () => {
       <QueryClientProvider client={client}>
         <Provider store={store}>
           <Router>
-            <Navbar />
-            <Routes>
-              {routes.map((route) => {
-                const Page = route.component;
-                return (
-                  <Route
-                    key={route.path}
-                    path={route.path}
-                    element={<Page />}
-                  />
-                );
-              })}
-            </Routes>
+            <div className="navbarWrapper">
+              <div className="navbar">
+                <Navbar />
+              </div>
+            </div>
+            <main>
+              <div className="content">
+                <Routes>
+                  {routes.map((route) => {
+                    const Page = route.component;
+                    return (
+                      <Route
+                        key={route.path}
+                        path={route.path}
+                        element={<Page />}
+                      />
+                    );
+                  })}
+                </Routes>
+              </div>
+            </main>
           </Router>
         </Provider>
       </QueryClientProvider>

@@ -1,7 +1,7 @@
 // import { useParams } from "react-router-dom";
-import { ProfileEdit } from "../components/ProfileEdit/ProfileEdit";
-import { Form } from "../components/Form/Form";
-import { useToggle } from "../hooks/useToggle";
+import { ProfileEdit } from "../../components/ProfileEdit/ProfileEdit";
+import { Form } from "../../components/Form/Form";
+import { useToggle } from "../../hooks/useToggle";
 import { useSelector } from "react-redux";
 
 export const Profile = () => {

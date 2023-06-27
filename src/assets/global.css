@@ -1,4 +1,5 @@
 :root {
+    /* Colors */
     --white: #fafafa;
     --focusWhite: white;
     --lightGray: #E8E8E8;
@@ -6,8 +7,17 @@
     --black: #2C2C2C;
     --navyBlue: #283cd7;
     --mint: #99edc3;
+    --separator: 38, 38, 38;
 
-    --custom-font-size: 16px;
+    /* Texts */
+    --custom-font-size: 14px;
+    --custom-line-height: 18px;
+
+    /* Sizes */
+    --feed-sidebar-width: 319px;
+    --nav-narrow-width: 72px;
+    --nav-medium-width: 244px;
+    --nav-wide-width: 335px;
 }
 
 * {
@@ -16,10 +26,13 @@
     box-sizing: border-box;
     font-family: 'Poppins', sans-serif;
     font-size: var(--custom-font-size);
+    line-height: var(--custom-line-height);
+    direction: ltr;
     list-style: none;
     text-decoration: none;
-    text-wrap: balance;
+    /* For debugging */
     /* outline: 1px solid var(--navyBlue); */
+    background-color: rgb(255, 0, 0, 0.1);
 }
 
 body {

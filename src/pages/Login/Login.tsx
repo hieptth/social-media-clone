@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import { login, logout } from "../store";
+import { login, logout } from "../../store";
 import { useDispatch, useSelector } from "react-redux";
 
 export const Login = () => {

@@ -8,10 +8,18 @@ export const Navbar = () => {
   return (
     <>
       <nav>
-        <Link to={"/"}>Home</Link>
-        <Link to={`/profile/${username}`}>Profile</Link>
-        <Link to={"/contact"}>Contact</Link>
-        <Link to={"/login"}>Login</Link>
+        <Link className="link" to={"/"}>
+          Home
+        </Link>
+        <Link className="link" to={`/profile/${username}`}>
+          Profile
+        </Link>
+        <Link className="link" to={"/contact"}>
+          Contact
+        </Link>
+        <Link className="link" to={"/login"}>
+          Login
+        </Link>
       </nav>
     </>
   );

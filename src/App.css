@@ -1,19 +1,46 @@
 .App {
-    display: grid;
-    justify-items: center;
-    align-items: center;
-    grid-template-areas: 'header' 'content' 'footer';
-    gap: 0 1rem;
+    display: flex;
+    align-items: stretch;
 }
 
-Navbar {
-    grid-area: header;
+.navbarWrapper {
+    /* Layout */
+    align-content: stretch;
+    align-items: stretch;
+    align-self: auto;
+    display: flex;
+    flex-direction: column;
+    flex-grow: 0;
+    flex-shrink: 0;
+    height: 100vh;
+    justify-content: flex-start;
+    overflow: visible;
+    position: fixed;
+    top: 0;
+    width: var(--nav-medium-width);
+    z-index: 10;
 }
 
-Routes {
-    grid-area: content;
+.navbar {
+    position: relative;
+    align-items: flex-start;
+    width: var(--nav-medium-width);
+    transform: matrix(1, 0, 0, 1, 0, 0);
+    text-size-adjust: 100%;
+    padding: 8px 12px 20px;
+    border-right: 1px solid rgb(var(--separator));
 }
 
-Footer {
-    grid-area: footer;
+main {
+    display: block;
+    margin-left: auto;
+    width: calc(100% - var(--nav-medium-width));
+}
+
+.content {
+    display: flex;
+    flex-direction: column;
+    flex-grow: 1;
+    width: 100%;
+    min-height: 100vh;
 }
