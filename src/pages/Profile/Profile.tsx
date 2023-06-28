@@ -1,5 +1,5 @@
 // import { useParams } from "react-router-dom";
-import { ProfileEdit } from "../../components/ProfileEdit/ProfileEdit";
+import { ProfileEdit } from "./ProfileEdit";
 import { Form } from "../../components/Form/Form";
 import { useToggle } from "../../hooks/useToggle";
 import { useSelector } from "react-redux";

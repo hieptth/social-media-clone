@@ -11,11 +11,17 @@ export const Navbar = () => {
         <Link className="link" to={"/"}>
           Home
         </Link>
+        <Link className="link" to={"/explore"}>
+          Explore
+        </Link>
+        <Link className="link" to={"/shorts"}>
+          Shorts
+        </Link>
+        <Link className="link" to={"/message/inbox"}>
+          Messages
+        </Link>
         <Link className="link" to={`/profile/${username}`}>
           Profile
-        </Link>
-        <Link className="link" to={"/contact"}>
-          Contact
         </Link>
         <Link className="link" to={"/login"}>
           Login

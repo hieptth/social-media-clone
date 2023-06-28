@@ -4,7 +4,7 @@ import { Navbar } from "./components/NavBar/Navbar";
 import { routes } from "./routes";
 import "./App.css";
 import { QueryClient, QueryClientProvider } from "@tanstack/react-query";
-import { store } from "./store";
+import { store } from "./data/store";
 
 export const App = () => {
   const client = new QueryClient({

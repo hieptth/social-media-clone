@@ -1,6 +1,6 @@
 import { useState } from "react";
 import { useDispatch } from "react-redux";
-import { login } from "../../store";
+import { login } from "../../data/store";
 
 export const ProfileEdit = () => {
   const [newUsername, setNewUsername] = useState("");
