@@ -6,6 +6,75 @@ nav {
     height: 100dvh;
 }
 
+nav * {
+    text-decoration: none;
+    color: var(--white);
+}
+
+.logoWrapper {
+    display: block;
+    flex-shrink: 0;
+    height: 92px;
+    position: relative;
+    width: 100%;
+}
+
+.navLinkWrapper {
+    display: block;
+    flex-grow: 1;
+    width: 100%;
+}
+
+.navMore {
+    display: block;
+    justify-content: flex-end;
+    width: 100%;
+}
+
 .link {
-    padding: .5rem 0;
+    align-items: center;
+    display: inline-flex;
+    flex-direction: row;
+    margin: 4px 0;
+    padding: 12px;
+    width: 100%;
+}
+
+.navLinkLogo {
+    display: block;
+}
+
+.navLinkTextWrapper {
+    align-items: center;
+    display: flex;
+    height: 24px;
+    overflow-x: hidden;
+    padding-left: 16px;
+    width: fit-content;
+    overflow: visible;
+}
+
+.innerContainer {
+    display: block;
+    max-width: 100%;
+    font-size: var(--custom-font-size-plus);
+    font-weight: 400;
+    line-height: 20px;
+    text-align: start;
+    text-overflow: ellipsis;
+    word-break: break-word;
+}
+
+.innerContainer::before {
+    display: block;
+    height: 0;
+    margin-top: -3px;
+    content: "";
+}
+
+.innerContainer::after {
+    display: block;
+    height: 0;
+    margin-bottom: -7px;
+    content: "";
 }
