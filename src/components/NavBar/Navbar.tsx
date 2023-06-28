@@ -10,7 +10,7 @@ import {
   SearchLogo,
   ShortsLogo,
   UserLogo,
-} from "../UI/iconPack";
+} from "../UI/IconPack";
 
 export const Navbar = () => {
   const { username } = useSelector((state: any) => state.user.value);
