@@ -24,8 +24,8 @@
 
 @font-face {
     font-family: 'hensaregular';
-    src: url('/public/assets/fonts/hensa-webfont.woff2') format('woff2'),
-        url('/public/assets/fonts/hensa-webfont.woff') format('woff');
+    src: url('/src/assets/fonts/hensa-webfont.woff2') format('woff2'),
+        url('/src/assets/fonts/hensa-webfont.woff') format('woff');
     font-weight: normal;
     font-style: normal;
 }
