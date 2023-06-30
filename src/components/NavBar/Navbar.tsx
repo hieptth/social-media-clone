@@ -9,8 +9,8 @@ import {
   NotificationsLogo,
   SearchLogo,
   ShortsLogo,
-  UserLogo,
 } from "../UI/IconPack";
+import pfp from "../../assets/imgs/pfp.jpg";
 
 export const Navbar = () => {
   const { username } = useSelector((state: any) => state.user.value);
@@ -19,7 +19,11 @@ export const Navbar = () => {
     <>
       <nav>
         <div className="logoWrapper">
-          <a href="/">Logo</a>
+          <div className="logoInnerWrapper">
+            <Link to={""}>
+              <p>Chernyy</p>
+            </Link>
+          </div>
         </div>
 
         <div className="navLinkWrapper">
@@ -102,17 +106,15 @@ export const Navbar = () => {
 
           <Link className="link" to={`/profile/${username}`}>
             <div className="navLinkLogo">
-              <UserLogo />
+              <div className="pfpWrapper">
+                <img src={pfp} alt="personalProfilePicture"></img>
+              </div>
             </div>
             <div className="navLinkTextWrapper">
               <div style={{ width: "100%" }}>
                 <div className="innerContainer">Profile</div>
               </div>
             </div>
-          </Link>
-
-          <Link className="link" to={"/login"}>
-            Login
           </Link>
         </div>
 

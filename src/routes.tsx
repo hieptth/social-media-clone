@@ -3,6 +3,7 @@ import { Explore } from "./pages/Explore/Explore";
 import { Home } from "./pages/Home/Home";
 import { Login } from "./pages/Login/Login";
 import { Message } from "./pages/Message/Message";
+import { NoneUser } from "./pages/Profile/NoneUser";
 import { Profile } from "./pages/Profile/Profile";
 import { Shorts } from "./pages/Shorts/Shorts";
 
@@ -11,6 +12,7 @@ export const routes = [
   { path: "explore", component: Explore },
   { path: "shorts", component: Shorts },
   { path: "message/inbox", component: Message },
+  { path: "profile", component: NoneUser },
   { path: "profile/:username", component: Profile },
   { path: "login", component: Login },
   { path: "*", component: ErrorPage },

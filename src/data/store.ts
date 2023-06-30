@@ -8,7 +8,7 @@ interface UserState {
   value: UserStateValue;
 }
 
-const initialState: UserState = { value: { username: "Hak" } };
+const initialState: UserState = { value: { username: "" } };
 const userSlice = createSlice({
   name: "user",
   initialState: initialState,
