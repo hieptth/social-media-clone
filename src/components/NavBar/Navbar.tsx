@@ -2,6 +2,7 @@ import "./Navbar.css";
 import { Link } from "react-router-dom";
 import { useSelector } from "react-redux";
 import {
+  CollapseIcon,
   CreateLogo,
   ExploreLogo,
   HomeLogo,
@@ -119,7 +120,18 @@ export const Navbar = () => {
         </div>
 
         <div className="navMore">
-          <p>More</p>
+          <div className="navMoreWrapper">
+            <div className="innerBox">
+              <div className="navLinkLogo">
+                <CollapseIcon />
+              </div>
+              <div className="navLinkTextWrapper">
+                <div style={{ width: "100%" }}>
+                  <div className="innerContainer">More</div>
+                </div>
+              </div>
+            </div>
+          </div>
         </div>
       </nav>
     </>

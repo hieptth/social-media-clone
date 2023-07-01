@@ -9,6 +9,7 @@
     --navyBlue: #283cd7;
     --mint: #99edc3;
     --separator: 38, 38, 38;
+    --hover-overlay-dark: 255, 255, 255, .1;
 
     /* Texts */
     --custom-font-size: 14px;

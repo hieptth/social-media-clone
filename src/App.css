@@ -23,8 +23,11 @@
 
 .navbar {
     position: relative;
+    display: flex;
     align-items: flex-start;
+    flex-direction: column;
     width: var(--nav-medium-width);
+    height: 100dvh;
     transform: matrix(1, 0, 0, 1, 0, 0);
     text-size-adjust: 100%;
     padding: 8px 12px 20px;

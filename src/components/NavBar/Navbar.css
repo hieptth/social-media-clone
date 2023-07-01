@@ -55,6 +55,13 @@ nav * {
     margin: 4px 0;
     padding: 12px;
     width: 100%;
+    border-radius: 8px;
+}
+
+.link:hover,
+.innerBox:hover {
+    background-color: rgba(var(--hover-overlay-dark));
+    transition: background-color .3s;
 }
 
 .navLinkLogo {
@@ -107,4 +114,22 @@ nav * {
     height: 0;
     margin-bottom: -7px;
     content: "";
+}
+
+.navMoreWrapper {
+    display: inline;
+    margin: 0;
+    padding: 0;
+    touch-action: manipulation;
+    cursor: pointer;
+}
+
+.innerBox {
+    align-items: center;
+    display: inline-flex;
+    flex-direction: row;
+    margin: 4px 0;
+    padding: 12px;
+    width: 100%;
+    border-radius: 8px;
 }
